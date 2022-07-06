@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  },
+  "name": "techdocument",
+  "version": "1.0.0",
+  "description": "technical document app",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksb96/techDoc.page.github.io.git"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "ksb96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksb96/techDoc.page.github.io/issues"
+  },
+  "homepage": "https://github.com/ksb96/techDoc.page.github.io#readme"
+}
