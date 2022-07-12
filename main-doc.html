@@ -16,7 +16,7 @@
 
 <body>
 
-  <div id="flipkart-navbar">
+  <div id="personal-navbar">
   <div class="container">
   <div class="row row1">
         <ul class="largenav pull-right">
@@ -35,32 +35,31 @@
           <li class="upper-links"><a class="links" href="#Function_declarations">Function declarations</a></li> 
           <li class="upper-links"><a class="links" href="#Reference">Reference</a></li> 
           <li class="upper-links">
-            <a class="links">
+            <button onclick="darkScreen()">
               <label class="switch">
+              <input type="checkbox">
+              <!-- <span class="slider round"></span> -->
+            </label>
+            </button>
+            <a class="links">
+              <!-- <label class="switch">
                 <input type="checkbox">
                 <span class="slider round"></span>
-              </label>
+              </label> -->
             </a>
           </li>
         </ul>
       </div>
-      <div class="row row2">
-        <div class="col-sm-2">
-          <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Brand</span></h2>
-        </div>
-      </div>
     </div>
   </div>
-  <div id="mySidenav" class="sidenav">
-    <div class="container" style="background-color: #000000; padding-top: 10px;">
-      <span class="sidenav-heading">Home</span>
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    </div>
 
-  </div>
-
-
-
+<!-- dark mode -->
+  <script>
+    function darkScreen() {
+       var element = document.body;
+       element.classList.toggle("dark-mode");
+    }
+    </script>
 
   <h1 class="main-head">JS Documentation</h1>
   <main id="main-doc">
