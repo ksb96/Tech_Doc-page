@@ -12,29 +12,57 @@
   </script>
 </head>
 
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 <body>
 
-<div>
-
-    <a href="#Introduction">Introduction</a>
-    <a href="#What_you_should_already_know">What you should already Know</a>
-    <a href="#JavaScript_and_Java">JavaScript and Java</a>
-    <a href="#Hello_world">Hello world</a>
-    <a href="#Variables">Variables</a>
-    <a href="#Declaring_variables">Declaring variables</a>
-    <a href="#Variable_scope" >Variable scope</a>
-    <a href="#Global_variables">Global variables</a>
-    <a href="#Constants" >Constants</a>
-    <a href="#Data_types">Data types</a>
-    <a href="#if...else_statement" >if...else statement</a>
-    <a href="#while_statement" >While statement</a>
-    <a href="#Function_declarations">Function declarations</a>
-    <a href="#Reference">Reference</a>
+  <div id="flipkart-navbar">
+  <div class="container">
+  <div class="row row1">
+        <ul class="largenav pull-right">
+          <li class="upper-links"><a class="links" href=#Introduction>Introduction</a></li>
+          <li class="upper-links"><a class="links" href="#What_you_should_already_know">What you should already Know</a></li>
+          <li class="upper-links"><a class="links" href="#JavaScript_and_Java">JavaScript and Java</a></li>
+          <li class="upper-links"><a class="links" href="#Hello_world">Hello world</a></li>
+          <li class="upper-links"><a class="links" href="#Variables">Variables</a></li>
+          <li class="upper-links"><a class="links" href="#Declaring_variables">Declaring variables</a></li>
+          <li class="upper-links"><a class="links" href="#Variable_scope">Variable scope</a></li>
+          <li class="upper-links"><a class="links" href="#Global_variables">Global variables</a></li>
+          <li class="upper-links"><a class="links" href="#Constants">Constants</a></li>
+          <li class="upper-links"><a class="links" href="#Data_types">Data types</a></li>
+          <li class="upper-links"><a class="links" href="#if...else_statement">If...else statement</a></li>
+          <li class="upper-links"><a class="links" href="#while_statement">While statement</a></li> 
+          <li class="upper-links"><a class="links" href="#Function_declarations">Function declarations</a></li> 
+          <li class="upper-links"><a class="links" href="#Reference">Reference</a></li> 
+          <li class="upper-links">
+            <a class="links">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="row row2">
+        <div class="col-sm-2">
+          <h2 style="margin:0px;"><span class="smallnav menu" onclick="openNav()">☰ Brand</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <div class="container" style="background-color: #000000; padding-top: 10px;">
+      <span class="sidenav-heading">Home</span>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    </div>
 
   </div>
 
 
-<h1 class="main-head">JS Documentation</h1>
+
+
+  <h1 class="main-head">JS Documentation</h1>
   <main id="main-doc">
     <section id="Introduction" class="main-section">
       <header>
@@ -363,7 +391,8 @@
           function, but if the function changes the value of the parameter, this change is not reflected globally or in
           the calling function.</p>
       </article>
-    </section>    <section id="Reference" class="main-section">
+    </section>
+    <section id="Reference" class="main-section">
       <header>
         <h2>Reference</h2>
       </header>
@@ -372,5 +401,5 @@
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></p>
       </article>
     </section>
-</main>
+  </main>
 </body>
