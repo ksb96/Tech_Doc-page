@@ -10,7 +10,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
   </script>
-  //scroll - up
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
@@ -59,6 +58,51 @@
       element.classList.toggle("dark-mode");
     }
   </script>
+
+<button onclick="topFunction()" id="myBtn">▲</button>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+  <!-- <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+          // If page is scrolled more than 50px
+          if ($(this).scrollTop() >= 50) {
+            // Fade in the arrow      
+            $('#return-to-top').fadeIn(200);
+          } else {
+            // Else fade out the arrow
+            $('#return-to-top').fadeOut(200);
+          }
+        });
+        $('#return-to-top').click(function () {
+          // When arrow is clicked
+          $('body,html').animate({
+            // Scroll to top of body
+            scrollTop: 0
+          }, 500);
+        });
+      </script> -->
 
   <h1 class="main-head">JavaScript Documentation</h1>
   <main id="main-doc">
