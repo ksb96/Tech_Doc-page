@@ -40,17 +40,12 @@
             <button onclick="darkScreen()">Click !!
             </button>
             <a class="links">
-              <!-- <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label> -->
             </a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-
   <!-- dark mode -->
   <script>
     function darkScreen() {
@@ -59,15 +54,13 @@
     }
   </script>
 
+<!-- scroll -->
 <button onclick="topFunction()" id="myBtn">▲</button>
-
 <script>
   //Get the button
   var mybutton = document.getElementById("myBtn");
-  
   // When the user scrolls down 20px from the top of the document, show the button
   window.onscroll = function() {scrollFunction()};
-  
   function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       mybutton.style.display = "block";
@@ -75,35 +68,13 @@
       mybutton.style.display = "none";
     }
   }
-  
   // When the user clicks on the button, scroll to the top of the document
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
   </script>
-
-  <!-- <script>
-        // ===== Scroll to Top ==== 
-        $(window).scroll(function () {
-          // If page is scrolled more than 50px
-          if ($(this).scrollTop() >= 50) {
-            // Fade in the arrow      
-            $('#return-to-top').fadeIn(200);
-          } else {
-            // Else fade out the arrow
-            $('#return-to-top').fadeOut(200);
-          }
-        });
-        $('#return-to-top').click(function () {
-          // When arrow is clicked
-          $('body,html').animate({
-            // Scroll to top of body
-            scrollTop: 0
-          }, 500);
-        });
-      </script> -->
-
+  <!-- main -->
   <h1 class="main-head">JavaScript Documentation</h1>
   <main id="main-doc">
     <section id="Introduction" class="main-section">
