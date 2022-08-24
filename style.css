@@ -64,6 +64,23 @@ code {
 #personal-navbar {
   background-color: #000;
   color: #FFFFFF;
+  padding: 10px 16px;
+  /* background: #555; */
+}
+
+/* header */
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .row1 {
